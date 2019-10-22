@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        remitter = Remitter(in: view, offsetType: .normal, cellImage: UIImage(named: "image")!)
+//        remitter = Remitter(in: view, offsetType: .normal, cellImage: UIImage(named: "image")!)
+        remitter = Remitter(in: view, offsetType: .normal, layerPosition: .zero, layerShape: .rectangle, cellImage: UIImage(named: "image")!, birthRate: 800, lifetime: 6, color: nil, velocity: 100, velocityRange: 400, emissionRange: 10, scale: 0.3)
         
     }
 

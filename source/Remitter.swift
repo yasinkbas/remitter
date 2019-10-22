@@ -65,6 +65,7 @@ public class Remitter {
         view.addSubview(remitter!)
     }
     
+    /// create remitter view with custom configuration and offset type
     public init(in view: UIView, offsetType:RemitterOffset, layerPosition: CGPoint, layerShape: CAEmitterLayerEmitterShape, cellImage: UIImage, birthRate: Float, lifetime: Float, color: UIColor?, velocity: CGFloat, velocityRange: CGFloat, emissionRange: CGFloat, scale: CGFloat) {
         baseView = view
         
