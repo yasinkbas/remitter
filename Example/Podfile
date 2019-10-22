@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'remitter_Example' do
+  pod 'remitter', :path => '../'
+
+  target 'remitter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
