@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import remitter
 
 class ViewController: UIViewController {
+    
+    var remitter: Remitter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        remitter = Remitter(in: view, offsetType: .normal, cellImage: UIImage(named: "image")!)
+        
     }
 
     override func didReceiveMemoryWarning() {

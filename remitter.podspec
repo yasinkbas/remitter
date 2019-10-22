@@ -1,24 +1,10 @@
-#
-# Be sure to run `pod lib lint remitter.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'remitter'
+  s.name             = 'Remitter'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of remitter.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Maker rain emitter in a line code'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'Remitter is an simple pod for creating rain, snow or something you like. it is really easy and you can create animation in a line, if you want to it you can easily configure remitter'
                        DESC
 
   s.homepage         = 'https://github.com/yasinkbas/remitter'
@@ -26,17 +12,12 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yasinkbas' => 'yasin.kbas12@gmail.com' }
   s.source           = { :git => 'https://github.com/yasinkbas/remitter.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'remitter/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'remitter' => ['remitter/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Source/**/*.swift'
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios": "11.0"
+  }
 end

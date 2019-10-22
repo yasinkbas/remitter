@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E5625FD5AB9EEFF8AE135A65EEF9082 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD67DD93E6C64C3DECC21557AF49F0 /* ReplaceMe.swift */; };
 		29E4F080B3DD982CE3F5F4917CF070FA /* Pods-remitter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD44C704A5E91CA2042D57832C9D936 /* Pods-remitter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		302F4FBA444804EE4CCAA111AAB3F0FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		564633430C519C512A941916DCD98CA7 /* Pods-remitter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934EE9444A89C83346C573B33FCD9C9 /* Pods-remitter_Example-dummy.m */; };
@@ -15,6 +14,8 @@
 		6F3B8CFFF281F177274C34870FDE8DD4 /* remitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 803A304F398F48BA376A11A6C9847625 /* remitter-dummy.m */; };
 		73ED47051E75F3C5022E922450FAC9F7 /* remitter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B844F47EDF0D3422562E7993CA337528 /* remitter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D04928892396983A8207B23D54CF25E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C214FCED235F863A00672CCF /* Remitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214FCE9235F85B900672CCF /* Remitter.swift */; };
+		C214FCEE235F863D00672CCF /* RemitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214FCEB235F85C600672CCF /* RemitterView.swift */; };
 		F5CC73028799991EAC123CDBA4EA39C9 /* Pods-remitter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9DCE0408891C66FF6AC97E9DBFEF79 /* Pods-remitter_Tests-dummy.m */; };
 		F80F9926E12CBB396D2DA6FEE26889DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0158E54A6F6E8D5ACCA8B48B306859E0 /* Pods-remitter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-remitter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		07B2EB19B40115E865A9DC9B416448DF /* Pods-remitter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-remitter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0FC1D6CC2BBD1D1CE31FFF9714044CB7 /* remitter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = remitter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0FC1D6CC2BBD1D1CE31FFF9714044CB7 /* remitter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = remitter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1316506D1EF4FC665D2897432BD86B0B /* Pods-remitter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-remitter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		220469B74605A401A70F0FCB5DBFDFA5 /* Pods-remitter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-remitter_Tests-Info.plist"; sourceTree = "<group>"; };
 		235F2362D75AD5001C1D78EC0CC006F0 /* Pods-remitter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-remitter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -50,7 +51,7 @@
 		357778B15C1099B22F6792C358D30C26 /* Pods-remitter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-remitter_Tests.modulemap"; sourceTree = "<group>"; };
 		3CF0775A6CDDE2DA5E8A3EDCA709318C /* Pods-remitter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-remitter_Example-Info.plist"; sourceTree = "<group>"; };
 		456CBC248ABAEC081EF3BCED61121FBF /* remitter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "remitter-Info.plist"; sourceTree = "<group>"; };
-		5E830F9391E3E3EA7EEACE0B2F097D9D /* Pods_remitter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_remitter_Example.framework; path = "Pods-remitter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E830F9391E3E3EA7EEACE0B2F097D9D /* Pods_remitter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remitter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B1BB445298BDDE877EC31E1DA273CB /* Pods-remitter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-remitter_Example-umbrella.h"; sourceTree = "<group>"; };
 		6C9DCE0408891C66FF6AC97E9DBFEF79 /* Pods-remitter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-remitter_Tests-dummy.m"; sourceTree = "<group>"; };
 		753FCA5B3ECFBDBCDCDD7B1EBFD0CE9D /* Pods-remitter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-remitter_Example.modulemap"; sourceTree = "<group>"; };
@@ -59,16 +60,17 @@
 		7D09454BB4EA05616F10F83E8537C2BC /* remitter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = remitter.xcconfig; sourceTree = "<group>"; };
 		803A304F398F48BA376A11A6C9847625 /* remitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "remitter-dummy.m"; sourceTree = "<group>"; };
 		82FE50DE6309D120F334D352FE5624D4 /* Pods-remitter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-remitter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AEBD67DD93E6C64C3DECC21557AF49F0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = remitter/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B844F47EDF0D3422562E7993CA337528 /* remitter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "remitter-umbrella.h"; sourceTree = "<group>"; };
-		BE59D3C7047FFB3ED57F8B110DD96A27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C413B951BA354DCEFAC3ACDBD4A79ED3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BE59D3C7047FFB3ED57F8B110DD96A27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C214FCE9235F85B900672CCF /* Remitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remitter.swift; sourceTree = "<group>"; };
+		C214FCEB235F85C600672CCF /* RemitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemitterView.swift; sourceTree = "<group>"; };
+		C413B951BA354DCEFAC3ACDBD4A79ED3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CFEAC9154663F91464FC51DD27DFF21E /* Pods-remitter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-remitter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D224E83A778380BF25A6AD1277F6C914 /* Pods-remitter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-remitter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DAD44C704A5E91CA2042D57832C9D936 /* Pods-remitter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-remitter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E5B26C98AFC4B4A0A73714E128635B3F /* Pods_remitter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_remitter_Tests.framework; path = "Pods-remitter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE9983CE902DCE6839BEB86424BB244C /* remitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = remitter.framework; path = remitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B26C98AFC4B4A0A73714E128635B3F /* Pods_remitter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remitter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9983CE902DCE6839BEB86424BB244C /* Remitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,7 @@
 		5E23E3934217936F2B8D011F9CCDD7D8 /* remitter */ = {
 			isa = PBXGroup;
 			children = (
-				AEBD67DD93E6C64C3DECC21557AF49F0 /* ReplaceMe.swift */,
+				C214FCE8235F857900672CCF /* source */,
 				A37C9839273CFBF1CB4F61E5FF11F3F7 /* Pod */,
 				710251D05541BEEF9DE7E16379C14EEB /* Support Files */,
 			);
@@ -192,6 +194,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C214FCE8235F857900672CCF /* source */ = {
+			isa = PBXGroup;
+			children = (
+				C214FCE9235F85B900672CCF /* Remitter.swift */,
+				C214FCEB235F85C600672CCF /* RemitterView.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +227,7 @@
 			children = (
 				5E830F9391E3E3EA7EEACE0B2F097D9D /* Pods_remitter_Example.framework */,
 				E5B26C98AFC4B4A0A73714E128635B3F /* Pods_remitter_Tests.framework */,
-				EE9983CE902DCE6839BEB86424BB244C /* remitter.framework */,
+				EE9983CE902DCE6839BEB86424BB244C /* Remitter.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,9 +300,9 @@
 			productReference = 5E830F9391E3E3EA7EEACE0B2F097D9D /* Pods_remitter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BAD2A6152FE2EDAC4682987EE1665883 /* remitter */ = {
+		BAD2A6152FE2EDAC4682987EE1665883 /* Remitter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D17A363F903F742E28613A708C4402F2 /* Build configuration list for PBXNativeTarget "remitter" */;
+			buildConfigurationList = D17A363F903F742E28613A708C4402F2 /* Build configuration list for PBXNativeTarget "Remitter" */;
 			buildPhases = (
 				EFD862AAEBB2FD1A3213093D9AE514A9 /* Headers */,
 				9E0C7EAAC8ED728C6BC2F32F6884CA9C /* Sources */,
@@ -302,9 +313,9 @@
 			);
 			dependencies = (
 			);
-			name = remitter;
+			name = Remitter;
 			productName = remitter;
-			productReference = EE9983CE902DCE6839BEB86424BB244C /* remitter.framework */;
+			productReference = EE9983CE902DCE6839BEB86424BB244C /* Remitter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -315,6 +326,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					A1A7AD54DAEC885C4B5B014713DE3608 = {
+						LastSwiftMigration = 1100;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -330,7 +346,7 @@
 			targets = (
 				A1A7AD54DAEC885C4B5B014713DE3608 /* Pods-remitter_Example */,
 				63A5190FB27C8E5A25E60C4B7879BB99 /* Pods-remitter_Tests */,
-				BAD2A6152FE2EDAC4682987EE1665883 /* remitter */,
+				BAD2A6152FE2EDAC4682987EE1665883 /* Remitter */,
 			);
 		};
 /* End PBXProject section */
@@ -364,8 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C214FCEE235F863D00672CCF /* RemitterView.swift in Sources */,
 				6F3B8CFFF281F177274C34870FDE8DD4 /* remitter-dummy.m in Sources */,
-				1E5625FD5AB9EEFF8AE135A65EEF9082 /* ReplaceMe.swift in Sources */,
+				C214FCED235F863A00672CCF /* Remitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +408,7 @@
 		042DB37B7E09E929BB7B20A56F06AEEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = remitter;
-			target = BAD2A6152FE2EDAC4682987EE1665883 /* remitter */;
+			target = BAD2A6152FE2EDAC4682987EE1665883 /* Remitter */;
 			targetProxy = 8CC179F64631F82335135497CE598F2A /* PBXContainerItemProxy */;
 		};
 		F0BECDC2917A4CF3CDD8E18BA99BDDB4 /* PBXTargetDependency */ = {
@@ -408,6 +425,7 @@
 			baseConfigurationReference = 1316506D1EF4FC665D2897432BD86B0B /* Pods-remitter_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -419,7 +437,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-remitter_Example/Pods-remitter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-remitter_Example/Pods-remitter_Example.modulemap";
@@ -430,6 +448,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -453,7 +472,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-remitter_Tests/Pods-remitter_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-remitter_Tests/Pods-remitter_Tests.modulemap";
@@ -475,6 +494,7 @@
 			baseConfigurationReference = D224E83A778380BF25A6AD1277F6C914 /* Pods-remitter_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -486,7 +506,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-remitter_Example/Pods-remitter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-remitter_Example/Pods-remitter_Example.modulemap";
@@ -497,6 +517,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -519,7 +541,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-remitter_Tests/Pods-remitter_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-remitter_Tests/Pods-remitter_Tests.modulemap";
@@ -590,8 +612,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -677,15 +698,15 @@
 				GCC_PREFIX_HEADER = "Target Support Files/remitter/remitter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/remitter/remitter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/remitter/remitter.modulemap";
 				PRODUCT_MODULE_NAME = remitter;
-				PRODUCT_NAME = remitter;
+				PRODUCT_NAME = Remitter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -709,15 +730,15 @@
 				GCC_PREFIX_HEADER = "Target Support Files/remitter/remitter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/remitter/remitter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/remitter/remitter.modulemap";
 				PRODUCT_MODULE_NAME = remitter;
-				PRODUCT_NAME = remitter;
+				PRODUCT_NAME = Remitter;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -736,7 +757,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D17A363F903F742E28613A708C4402F2 /* Build configuration list for PBXNativeTarget "remitter" */ = {
+		D17A363F903F742E28613A708C4402F2 /* Build configuration list for PBXNativeTarget "Remitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE862300FD28268DAE0990F07F3D76E5 /* Debug */,
