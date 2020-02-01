@@ -48,8 +48,7 @@ class ViewController: UIViewController {
 }
 ```
 
-### Control
-You can basically control with default functions
+### Stopping & Resuming
 ```swift
 // stops remitter immediately
 remitter.stop(animated: true)
