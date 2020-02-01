@@ -29,13 +29,13 @@ pod 'remitter'
 Just copy these [files](https://github.com/yasinkbas/remitter/tree/master/remitter/Classes) to your project
 
 ## Usage
-### Initial Remitter
+### Initial
 ```swift
 class ViewController: UIViewController {  
     var remitter: Remitter!
 
     override func viewDidLoad() {
-      // initial remitter in a view without offset 
+      // initial remitter in a view without offset
       remitter = Remitter(in: view, cellImage: UIImage(named: "image")!)
 
       // initial remitter with enum offset
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
 }
 ```
 
+### Control
 You can basically control with default functions
 ```swift
 // stops remitter immediately
