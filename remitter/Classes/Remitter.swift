@@ -97,7 +97,7 @@ public class Remitter {
         view.addSubview(remitter!)
     }
     
-    /// this function adds remitter to view 
+    /// adds remitter to view
     public func resume(animated: Bool) {
         remitterControl()
         baseView.addSubview(remitter!)
@@ -108,13 +108,20 @@ public class Remitter {
             UIView.animate(withDuration: 0.7, animations:  {
                 self.remitter?.alpha = 1
             },completion: nil)
-        
+            
         } else {
             self.remitter?.alpha = 1
         }
     }
     
-    /// this function removed remitter from your view
+    /// adds remitter to view after given seconds
+    public func resumeAfter(seconds: Double, animated: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: {
+            self.resume(animated: animated)
+        })
+    }
+    
+    /// removed remitter from your view
     public func stop(animated: Bool) {
         remitterControl()
         
@@ -130,14 +137,14 @@ public class Remitter {
         }
     }
     
-    /// this function stop remitter after given seconds
+    /// stop remitter after given seconds
     public func stopAfter(seconds: Double, animated: Bool) {
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: {
             self.stop(animated: animated)
         })
     }
     
-    /********************  Private  ********************/
+    // MARK: - Private
     private func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 

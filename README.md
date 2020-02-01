@@ -19,47 +19,54 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 ### CocoaPods
 remitter is available through [CocoaPods](https://cocoapods.org).
-To be able to use the framework in your project:
-1. Install [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#toc_3) on your computer:
+
+Add the following line to your Podfile:
 ```ruby
-$ sudo gem install cocoapods
+pod 'remitter'
 ```
-2. Create a [Podfile](https://guides.cocoapods.org/using/the-podfile.html) in your project directory and add the dependency:
-```ruby
-use_frameworks!
-platform :ios, '11.0'
-target '<my_app>' do
-  pod 'remitter'
-end
-```
-3. Run `pod install` in the project directory:
-```ruby
-$ cd <path/to/your/project/directory>
-$ pod install
-```
-4. Open `<my_app>.xcworkspace` in Xcode and build.
-5. From now on you can import and use the framework in your code:
-```swift
-import remitter
-```
+
+### Manual
+Just copy these [files](https://github.com/yasinkbas/remitter/tree/master/remitter/Classes) to your project
 
 ## Usage
-1. Import the framework into swift file.
-
-
+### Initial Remitter
 ```swift
-import remitter                            //1
 class ViewController: UIViewController {  
     var remitter: Remitter!
 
     override func viewDidLoad() {
-      remitter = Remitter(in: view, offsetType: .normal, cellImage: UIImage(named: "your_image")!)
+      // initial remitter in a view without offset 
+      remitter = Remitter(in: view, cellImage: UIImage(named: "image")!)
+
+      // initial remitter with enum offset
+      remitter = Remitter(in: view, offsetType: .normal, cellImage: UIImage(named: "image")!)
+
+      // initial custom remitter
+      remitter = Remitter(in: view, offsetType: .normal, layerPosition: .zero, layerShape: .rectangle, cellImage: UIImage(named: "image")!, birthRate: 800, lifetime: 6, color: nil, velocity: 100, velocityRange: 400, emissionRange: 10, scale: 0.3)
+
     }
 }
 ```
 
-For more code examples on `remitter` usage see the example project.
+You can basically control with default functions
+```swift
+// stops remitter immediately
+remitter.stop(animated: true)
 
+// stops remitter after given seconds
+remitter.stopAfter(seconds: 10, animated: true)
+
+// resume remitter immediately
+remitter.resume(animated: true)
+
+// resume remitter after given seconds
+remitter.resumeAfter(seconds: 15, animated: true)
+
+```
+Note: No need to call resume function when you initialized remitter
+
+
+For more code examples on `remitter` usage see the example project.
 
 ## License
 
