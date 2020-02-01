@@ -7,13 +7,13 @@
 
 import UIKit
 
-public enum RemitterOffset {
-    case zero
-    case normal
-}
-
 /// this view has to be heigher (y) coordinate than main view if you want this like snow you can use offset for this or use normal remitter type
 public class Remitter {
+    
+    public enum RemitterOffset {
+        case zero
+        case normal
+    }
     
     private var remitter: RemitterView?
     private var baseView: UIView
@@ -137,8 +137,7 @@ public class Remitter {
         })
     }
     
-    //---------------------------- Private ----------------------------//
-    
+    /********************  Private  ********************/
     private func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 
@@ -172,8 +171,5 @@ public class Remitter {
         } else {
             return CGRect(x: 0, y: 0, width: baseView.bounds.width, height: baseView.bounds.height)
         }
-        
     }
-    
 }
-
